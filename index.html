@@ -149,10 +149,48 @@
 			
 		<!-- Referencias -->
 		<section id="two" class="main style2 left dark fullscreen">
-			
+			<script>
+				$(document).ready(function() {
+				   $('#tabla').dataTable();
+				})
+			 </script>
+
+			<table id="tabla">
+				<thead>
+	   				<tr><td>Nombre</td><td>teléfono</td><td>correo electrónico</td><td>parentesco</td></tr>
+				</thead>
+			<tbody>
+	   			   <tr><td>Leonardo</td><td>4569-4445</td><td>leonardo@gmail.com</td><td>papa</td></tr>
+	   			   <tr><td>Amparo</td><td>2589-6854</td><td>amparo@gmail.com</td><td>mama</td></tr>
+	   			   <tr><td>Sandra</td><td>8597-8981</td><td>sandra@gmail.com</td><td>hermana</td></tr>
+				   <tr><td>Claudia</td><td>1895-7895</td><td>claudia@gmail.com</td><td>hermana</td></tr>
+				   <tr><td>Blanca</td><td>8597-7745</td><td>blanca@gmail.com</td><td>hermana</td></tr>
+				   <tr><td>Daniel</td><td>8449-7894</td><td>daniel@gmail.com</td><td>cuñado</td></tr>
+				   <tr><td>Roberto</td><td>1123-7865</td><td>eoberto@gmail.com</td><td>cuñado</td></tr>
+				   <tr><td>Erick</td><td>1549-4891</td><td>erick@gmail.com</td><td>cuñado</td></tr>
+				   <tr><td>Waldemar</td><td>7895-7891</td><td>waldemar@gmail.com</td><td>sobrino</td></tr>
+				   <tr><td>Josue</td><td>7848-8975</td><td>josue@gmail.com</td><td>sobrino</td></tr>
+				   <tr><td>Lorena</td><td>7898-7891</td><td>lorena@gmail.com</td><td>sobrina</td></tr>
+				   <tr><td>Fatima</td><td>2859-7895</td><td>fatima@gmail.com</td><td>sobrina</td></tr>
+				   <tr><td>Karen</td><td>8959-7778</td><td>karen@gmail.com</td><td>sobrina</td></tr>
+				   <tr><td>Santiago</td><td>8958-7895</td><td>santiago@gmail.com</td><td>sobrino</td></tr>
+				   <tr><td>Kamila</td><td>1235-7895</td><td>kamila@gmail.com</td><td>sobrina</td></tr>
+			</tbody>
+ </table>
+ 
+ <link type="text/css" href="css/jquery.dataTables_themeroller.css" rel="stylesheet"/>
+ <link type="text/css" href="css/custom-theme/jquery-ui-1.8.16.custom.css" rel="stylesheet"/>
+ 
+ 	<script>
+		$(document).ready(function() {
+	   	$('#tabla').dataTable({
+		  bJQueryUI : true
+		   });
+		})
+	 </script>			
 
 
-			
+
 
 
 
@@ -192,6 +230,7 @@
 			<script src="assets/js/jquery-ui-1.9.2.custom.min.js"></script>
 			<script src="assets/js/jquery-1.8.3.min.js"></script>
 			<script src="assets/js/demo.js"></script>
+			<script src="assets/js/jquery.dataTables.min.js"></script>
 
 	</body>
 </html>
